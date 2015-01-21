@@ -29,22 +29,22 @@ $sftp->login($user, $pass);
 $sftp->getCurrentDirectory();
 ```
 
-#####Create directory
+##### Create directory
 ```php
 $sftp->createDirectory($path, $ignore_if_exists);
 ```
 
-#####Delete directory
+##### Delete directory
 ```php
 $sftp->deleteDirectory($path);
 ```
 
-#####Delete file
+##### Delete file
 ```php
 $sftp->deleteFile($path);
 ```
 
-#####Get directory content list
+##### Get directory content list
 ```php
 // just names
 $sftp->getDirectoryList($path, $recursive);
@@ -56,7 +56,7 @@ $sftp->getDirectoryRawList($path, $recursive);
 $sftp->getDirectoryRawListFormatted($path, $recursive);
 ```
 
-#####Get file stat
+#### Get file stat
 ```php
 $stat = $sftp->stat($path); 
 ```
