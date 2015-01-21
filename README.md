@@ -3,7 +3,7 @@ PHP Sftp Client Class using SSH2 functions and shell commands
 
 *By GR admin@admin.ge*
 
-*http://www.admin.ge/portfolio* 
+*http://www.admin.ge/portfolio*<br>
 *http://www.GR8cms.com*
 
 *Copyright (c) 2015 GR*
