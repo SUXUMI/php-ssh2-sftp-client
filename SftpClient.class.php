@@ -84,7 +84,7 @@ class SftpClient {
 	 * Escape chars (DO NOT CHANGE THE ORDER!!!)
 	 * @var array
 	 */
-	private $escapeChars		= array('\\', '"');
+	private $escapeChars		= array('\\', '"', '`');
 
 	/**
 	 * LANG Constants
