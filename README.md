@@ -1,14 +1,16 @@
 # php-ssh2-sftp-client
-PHP Sftp Client Class using SSH2 functions and shell commands
+PHP Sftp Client Class using SSH2 functions and shell commands, with server-side error handlings
+
 
 *By GR admin@admin.ge*
 
-*[Portfolio]http://www.admin.ge/portfolio*<br>
-*[GR8cms.com]http://www.GR8cms.com*
+*[Portfolio](http://www.admin.ge/portfolio)*<br>
+*[GR8cms.com](http://www.GR8cms.com)*
 
 *Copyright (c) 2015 GR*<br>
 *licensed under the MIT licenses*<br>
 *http://www.opensource.org/licenses/mit-license.html*
+
 
 ##USAGE
 
