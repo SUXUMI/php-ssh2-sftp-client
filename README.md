@@ -31,13 +31,38 @@ $sftp->getCurrentDirectory();
 
 ###Create directory
 ```php
-$sftp->createDirectory($path);
+$sftp->createDirectory($path, $ignore_if_exists);
 ```
 
 ###Delete directory
 ```php
 $sftp->deleteDirectory($path);
 ```
+
+###Delete file
+```php
+$sftp->deleteFile($path);
+```
+
+####Get directory content list
+```php
+// just names
+$sftp->getDirectoryList($path, $recursive);
+
+// rawlist
+$sftp->getDirectoryRawList($path, $recursive);
+
+// <b>formated</b> rawlist
+$sftp->getDirectoryRawListFormatted($path, $recursive);
+```
+
+####Get file stat
+```php
+$stat = $sftp->stat($path); 
+```
+
+
+
 
 
 
