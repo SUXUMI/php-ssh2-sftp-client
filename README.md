@@ -6,9 +6,8 @@ PHP Sftp Client Class using SSH2 functions and shell commands
 *http://www.admin.ge/portfolio*<br>
 *http://www.GR8cms.com*
 
-*Copyright (c) 2015 GR*
-
-*licensed under the MIT licenses*
+*Copyright (c) 2015 GR*<br>
+*licensed under the MIT licenses*\n
 *http://www.opensource.org/licenses/mit-license.html*
 
 ##USAGE
