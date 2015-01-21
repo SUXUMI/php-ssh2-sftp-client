@@ -7,7 +7,7 @@ PHP Sftp Client Class using SSH2 functions and shell commands
 *http://www.GR8cms.com*
 
 *Copyright (c) 2015 GR*<br>
-*licensed under the MIT licenses*\n
+*licensed under the MIT licenses*<br>
 *http://www.opensource.org/licenses/mit-license.html*
 
 ##USAGE
@@ -23,3 +23,21 @@ $sftp->connect($host, $port, $timeout);
 // login
 $sftp->login($user, $pass);
 ```
+
+**Get current directory:**
+```php
+$sftp->getCurrentDirectory();
+```
+
+###Create directory
+```php
+$sftp->createDirectory($path);
+```
+
+###Delete directory
+```php
+$sftp->deleteDirectory($path);
+```
+
+
+
