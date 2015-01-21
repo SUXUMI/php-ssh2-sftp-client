@@ -12,9 +12,9 @@ PHP Sftp Client Class using SSH2 functions and shell commands
 
 ##USAGE
 
-**Connect to an SSH server & authenticate:**
-
+##### Connect to an SSH server & authenticate:
 ```php
+// initialize
 $sftp = new \GR\SftpClient();
 
 // connect
@@ -24,7 +24,7 @@ $sftp->connect($host, $port, $timeout);
 $sftp->login($user, $pass);
 ```
 
-**Get current directory:**
+##### Get current directory:
 ```php
 $sftp->getCurrentDirectory();
 ```
@@ -56,7 +56,7 @@ $sftp->getDirectoryRawList($path, $recursive);
 $sftp->getDirectoryRawListFormatted($path, $recursive);
 ```
 
-#### Get file stat
+##### Get file stat
 ```php
 $stat = $sftp->stat($path); 
 ```
