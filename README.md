@@ -1,16 +1,16 @@
 # php-ssh2-sftp-client
 PHP Sftp Client Class using SSH2 functions and shell commands
 
-*By GR 
+*By GR*
 
-*http://www.admin.ge/portfolio
-*http://www.GR8cms.com
+*http://www.admin.ge/portfolio*
+*http://www.GR8cms.com*
 
 *licensed under the MIT licenses
 
 # USAGE
 
-** Connect to an SSH server & authenticate:
+**Connect to an SSH server & authenticate:**
 
 ```php
 $sftp = new \GR\SftpClient();
