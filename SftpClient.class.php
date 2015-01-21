@@ -364,7 +364,7 @@ class SftpClient {
 	 * @param array $ignorePaths
 	 * @return array
 	 */
-	public function getRawfileFormatted_NIX($rawfile, $path, array $ignoreFilenames) {
+	private function getRawfileFormatted_NIX($rawfile, $path, array $ignoreFilenames) {
 		$out			= array();
 		
 		$info			= preg_split("/[\s]+/", $rawfile, 9);
@@ -409,7 +409,7 @@ class SftpClient {
 	 * @param array $ignorePaths
 	 * @return array
 	 */
-	public function getRawfileFormatted_WIN($rawfile, $directory, array $ignoreNames) {
+	private function getRawfileFormatted_WIN($rawfile, $directory, array $ignoreNames) {
 		$out = array();
 		
 		return $out;

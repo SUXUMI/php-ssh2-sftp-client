@@ -3,8 +3,8 @@ PHP Sftp Client Class using SSH2 functions and shell commands
 
 *By GR admin@admin.ge*
 
-*http://www.admin.ge/portfolio*<br>
-*http://www.GR8cms.com*
+*[Portfolio]http://www.admin.ge/portfolio*<br>
+*[GR8cms.com]http://www.GR8cms.com*
 
 *Copyright (c) 2015 GR*<br>
 *licensed under the MIT licenses*<br>
@@ -29,22 +29,22 @@ $sftp->login($user, $pass);
 $sftp->getCurrentDirectory();
 ```
 
-###Create directory
+#####Create directory
 ```php
 $sftp->createDirectory($path, $ignore_if_exists);
 ```
 
-###Delete directory
+#####Delete directory
 ```php
 $sftp->deleteDirectory($path);
 ```
 
-###Delete file
+#####Delete file
 ```php
 $sftp->deleteFile($path);
 ```
 
-####Get directory content list
+#####Get directory content list
 ```php
 // just names
 $sftp->getDirectoryList($path, $recursive);
@@ -56,7 +56,7 @@ $sftp->getDirectoryRawList($path, $recursive);
 $sftp->getDirectoryRawListFormatted($path, $recursive);
 ```
 
-####Get file stat
+#####Get file stat
 ```php
 $stat = $sftp->stat($path); 
 ```
