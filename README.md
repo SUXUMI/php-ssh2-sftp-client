@@ -63,7 +63,54 @@ $sftp->getDirectoryRawListFormatted($path, $recursive);
 $stat = $sftp->stat($path); 
 ```
 
+##### Download a file
+```php
+$sftp->downloadFile($remote_file, $local_file); 
+```
 
+##### Upload a file
+```php
+$sftp->uploadFile($local_file, $remote_file[, int $create_mode = 0644 ] ); 
+```
+
+##### Rename file/directory
+```php
+// Rename File
+$sftp->renameFile($oldname, $newname);
+
+// Rename Folder
+$sftp->renameDirectory($oldname, $newname);
+
+// both of them are alias of
+$sftp->renameFileOrFolder($oldname, $newname);
+```
+
+##### Create Symlink
+```php
+$sftp->createSymlink($target, $link); 
+```
+
+##### Execute custom command
+```php
+$sftp->ssh2_exec($cmd); 
+```
+
+##### Close connection
+```php
+$sftp->close(); 
+```
+
+#### Handle Errors
+```php
+try {
+	$sftp = new \GR\SftpClient();
+	$sftp->connect($host, $port, $timeout);
+	$sftp->login($user, $pass);
+}
+catch(ErrorException $e) {
+	// handle the error
+}
+```
 
 
 

@@ -551,7 +551,7 @@ class SftpClient {
 	 * @param string $trimOutput
 	 * @return Ambigous: <boolean, empty, string> (FALSE on error)
 	 */
-	private function ssh2_exec($cmd, $trimOutput = true) {
+	public function ssh2_exec($cmd, $trimOutput = true) {
 		$stream  = ssh2_exec($this->connection, $cmd);
 		stream_set_blocking($stream, true);
 		
