@@ -437,10 +437,11 @@ class SftpClient {
 	 * 
 	 * @param string $remote_file
 	 * @param string $local_file
+	 * @param bool|number $create_mode
 	 * @throws \ErrorException
 	 * @return \GR\SftpClient
 	 */
-	public function downloadFile($remote_file, $local_file) {
+	public function downloadFile($remote_file, $local_file, $create_mode = false) {
 		// if file not exists - try to create it
 		if (!file_exists($local_file)) {
 			$handle = @fopen($local_file, 'w');
@@ -455,6 +456,10 @@ class SftpClient {
 		
 		if ($result === false) {
 			throw new \ErrorException(self::ERR_DOWNLOAD_FAILED, 0, 1, __FILE__, __LINE__);
+		}
+		
+		if ($create_mode !== false) {
+			@chmod($local_file, $create_mode);
 		}
 		
 		return $this;
