@@ -12,7 +12,7 @@ PHP Sftp Client Class using SSH2 functions and shell commands, with server-side 
 *http://www.opensource.org/licenses/mit-license.html*
 
 
-##USAGE
+## USAGE
 
 ##### Connect to an SSH server & authenticate:
 ```php
@@ -111,7 +111,3 @@ catch(ErrorException $e) {
 	// handle the error
 }
 ```
-
-
-
-
